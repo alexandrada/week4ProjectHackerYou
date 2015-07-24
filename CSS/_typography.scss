@@ -1,0 +1,44 @@
+html {
+	font-size: 16px;
+	
+	@media(max-width:940px){
+		font-size: 14px;
+	}
+	
+	@media(max-width:810px){
+		font-size: 12px;
+	}
+	@media(max-width:700px){
+		font-size:10px;
+	}
+}
+body {
+	font-family: Helvetica, sans-serif;
+}
+h1 {
+	color: $red;
+	font-size: 4.66rem;
+	padding: 5% 0 1%;
+}
+h2 {
+	font-size: 3rem;
+	line-height: 3.6rem;
+}
+
+h1,
+h2{
+	font-weight: 800;
+}
+h2, h3, h4, p {
+	color: $black;
+}
+h4 {
+	font-size:1.2rem;
+}
+p {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	@media(max-width:700px){
+		font-size: 1.2rem;
+	}
+}

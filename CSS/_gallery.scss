@@ -1,0 +1,19 @@
+.gallery{
+  .hacker-wrapper{
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img{
+    margin-top: 20%;
+    width: 220px;
+    height: 220px;
+    
+  }
+  div {
+    padding: 0 1% 2%;
+  }
+  
+  
+  
+}

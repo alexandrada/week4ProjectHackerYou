@@ -1,0 +1,23 @@
+header{
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  h2{
+    margin-bottom: 10%;
+  }
+  
+  .flex{
+    margin-left:3%;
+    @include flex;
+    flex-direction:row;
+    
+  }
+  img {
+    height:170px;
+    width: 112px;
+    position: fixed;
+    right: 0
+    
+  }
+}

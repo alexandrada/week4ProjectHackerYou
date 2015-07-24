@@ -1,0 +1,21 @@
+@import "normalize";
+@import "magnific-popup";
+@import "variables";
+@import "mixin";
+@import "typography";
+@import "header";
+@import "gallery";
+@import "petPopUp";
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: $gray;
+}
+
+.site-container{
+  max-width:1110px;
+  margin: 0 auto;
+  background: white;
+}
