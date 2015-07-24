@@ -5,13 +5,16 @@
 @import "typography";
 @import "header";
 @import "gallery";
-@import "petPopUp";
+@import "modal";
 *{
   box-sizing: border-box;
 }
 
 body{
   background: $gray;
+}
+a {
+  position:relative;
 }
 
 .site-container{

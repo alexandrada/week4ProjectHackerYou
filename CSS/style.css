@@ -1019,27 +1019,28 @@ header img {
   padding: 0 1% 2%;
 }
 
-.petPopUp {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  background: white;
+.modal-container {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: magenta;
   margin: 0 auto;
   padding: 2%;
+  z-index: 2;
 }
 
-.petPopUp img {
-  width: 400px;
-  height: 400px;
+.modal-container .overlay {
+  height: 100%;
+  width: 100%;
 }
 
-.petPopUp div {
-  width: 55%;
+.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 * {
@@ -1048,6 +1049,10 @@ header img {
 
 body {
   background: #EFEFED;
+}
+
+a {
+  position: relative;
 }
 
 .site-container {
