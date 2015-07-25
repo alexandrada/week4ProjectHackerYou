@@ -89,6 +89,21 @@ $(document).ready(function(){
       together: 'images/cat_earlKendrickWaffles_adam_together.jpg'
     },
     
+    izzy:{
+      name:'Izzy Cooper',
+      nickname: 'Littles',
+      age: '4 years old',
+      sex: 'Female',
+      birthday: 'May 1st',
+      likes: 'Cuddles, her bed, belly rubs',
+      dislikes: 'Dislikes empty food bowl, hard surface, smelly litterbox',
+      favourite: 'Fancy Feast',
+      expertise: 'CSS',
+      popUp: 'images/cat_izzy.jpg',
+      owner: 'images/cat_moose_nat.jpg',
+      together: 'images/cat_izzy_nat_together.jpg'
+    },
+    
     leo:{
       name: 'Leo',
       nickname: 'A',
@@ -106,16 +121,31 @@ $(document).ready(function(){
     lucha:{
       name:'Lucha',
       nickname: 'Lu, Lubear, Lubeezy, Luchie, Susan Luchie, Luchita Nyong’o',
-      age: '1 years 9 months',
-      sex: 'female',
+      age: '1 years 9 months old',
+      sex: 'Female',
       birthday: 'October 28th',
       likes: 'Food, walks, snuggles, belly rubs, chewing on stuff',
       dislikes: 'Strangers, telephones, Marnie Michaels from the HBO show Girls (will bark at TV)',
-      favourite: ' Salmon, carrots, or peanut butter',
+      favourite: 'Salmon, carrots, or peanut butter',
       expertise: 'SCSS because she\'s Sassy',
       popUp: 'images/dog_lucha.jpg',
       owner: 'images/dog_lucha_jess.jpg',
       together: 'images/dog_lucha_jess_together.jpg'
+    },
+    
+    moose:{
+      name:'Moose Abramson',
+      nickname: 'Moosey',
+      age: '5 years old',
+      sex: 'Male',
+      birthday: 'February 5th',
+      likes: 'Treats, warm concrete, attention',
+      dislikes: 'Baths, wind, smelly litterbox',
+      favourite: 'Temptations',
+      expertise: 'Javascript',
+      popUp: 'images/cat_moose.jpg',
+      owner: 'images/cat_moose_nat.jpg',
+      together: 'images/cat_moose_jesse_together.jpg'
     },
     
     mrmoo:{
