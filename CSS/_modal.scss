@@ -38,32 +38,32 @@
     background: white;
     @include flex;
     padding: 2%;
+    flex-direction: row;
+    
   }
   
   .modal-content-container{
-    width:30%;
+    width:45%;
   }
-  .hacker{
-    @include flex;
-    flex-direction: row;
-    padding-top: 15%;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .hacker img{
+  .owner{
     width: 100px;
     height:100px;
     border-radius: 50%;
   }
+  
+  .multiple-owners{
+    width: 200px;
+    height: 100px;
+    border-radius: 0;
+  }
+  ul {
+    margin-top: 5%;
+    
+  }
+  
 }
 .show {
   visibility: visible;
   background: rgba(255, 255, 255, 0.8);
   opacity: 1;
-}
-
-.owner{
-  visibility: hidden;
-  opacity: 0;
 }

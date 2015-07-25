@@ -35,10 +35,15 @@ h2, h3, h4, p {
 h4 {
 	font-size:1.2rem;
 }
-p {
+
+p, li {
 	font-size: 1rem;
 	line-height: 1.2rem;
 	@media(max-width:700px){
 		font-size: 1.2rem;
+	}
+	.bold {
+		font-weight:600;
+		color: $red;
 	}
 }

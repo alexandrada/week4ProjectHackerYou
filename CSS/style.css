@@ -961,15 +961,20 @@ h4 {
   font-size: 1.2rem;
 }
 
-p {
+p, li {
   font-size: 1rem;
   line-height: 1.2rem;
 }
 
 @media (max-width: 700px) {
-  p {
+  p, li {
     font-size: 1.2rem;
   }
+}
+
+p .bold, li .bold {
+  font-weight: 600;
+  color: #d12026;
 }
 
 header {
@@ -1070,40 +1075,33 @@ header img {
   display: -o-flex;
   display: flex;
   padding: 2%;
+  flex-direction: row;
 }
 
 .modal-container .modal-content-container {
-  width: 30%;
+  width: 45%;
 }
 
-.modal-container .hacker {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: row;
-  padding-top: 15%;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.modal-container .hacker img {
+.modal-container .owner {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.modal-container .multiple-owners {
+  width: 200px;
+  height: 100px;
+  border-radius: 0;
+}
+
+.modal-container ul {
+  margin-top: 5%;
 }
 
 .show {
   visibility: visible;
   background: rgba(255, 255, 255, 0.8);
   opacity: 1;
-}
-
-.owner {
-  visibility: hidden;
-  opacity: 0;
 }
 
 * {
