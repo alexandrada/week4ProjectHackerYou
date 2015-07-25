@@ -8,10 +8,39 @@
     margin-top: 20%;
     width: 220px;
     height: 220px;
+    position:relative;
     
   }
   div {
     padding: 0 1% 2%;
+  }
+  .overlay-hover{
+    margin-top: 20%;
+    background:rgba(0,0,0,.6);
+    width:220px;
+    height: 220px;
+    position: absolute;
+    padding: 0 1% 2;
+    top:0;
+    left:2px;
+    text-align:center;
+    opacity:0;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fa-paw{
+    margin:0;
+    color:$gray;
+    font-size: 4rem;
+  }
+  
+  .overlay-hover:hover {
+    opacity:1;
   }
   
   

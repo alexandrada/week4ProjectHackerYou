@@ -172,6 +172,21 @@ $(document).ready(function(){
       popUp:'images/cat_rufus.jpg',
       owner: 'images/cat_rufus_amanda.jpg',
       together: 'images/cat_rufus_amanda_together.jpg'
+    },
+    
+    sinclair: {
+      name: 'Sinclair',
+      nickname: 'Kotentse [Bulgarian: котенце] meaning kitten',
+      age: '3 years old',
+      sex: 'Male',
+      birthday: 'August 17th',
+      likes: 'Catching birds, trying to sneak into neighbouring apartments, and morning cuddles',
+      dislikes: 'Small dogs, being ignored, and an empty food bowl',
+      favourite: 'Dried chicken necks, wild boar jerky, and being brushed.',
+      expertise: 'CSS',
+      popUp:'images/cat_sinclair.jpg',
+      owner: 'images/cat_sinclair_yana.jpg',
+      together: 'images/cat_sinclair_yana_together.jpg'
     }
   };
   

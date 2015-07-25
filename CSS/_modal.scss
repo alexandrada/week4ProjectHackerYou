@@ -50,6 +50,9 @@
     height:100px;
     border-radius: 50%;
   }
+  .owner:hover {
+    cursor:pointer;
+  }
   
   .multiple-owners{
     width: 200px;
@@ -58,7 +61,19 @@
   }
   ul {
     margin-top: 5%;
-    
+  }
+  .owner-img-container{
+    @include flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .owner-img-container:hover h5{
+    color: $red;
+  }
+  
+  h5{
+    margin-top: 10%;
   }
   
 }

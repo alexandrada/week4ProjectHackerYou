@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HackerYou Pet Directory</title>
-	<link href='http://fonts.googleapis.com/css?family=Biryani:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -11,19 +11,23 @@
 		<div class="flex"><!-- flexbox -->
 			<div class="header-titles">
 				<h1>HackerPets Directory</h1>
-				<h2>Match the HackerPet to the HackerYou<br>Click on any pet to begin!</h2>
+				<h2>Click on any pet to view them!</h2>
 			</div><!-- header-titles -->
 			<img src="images/hackerpetlogo.png" alt="HackerYou Pet Logo">
 			<!-- hackerpets logo -->
 		</div><!-- flexbox -->
 	</header>
 	<div class="site-container">
-		
 		<section class="gallery">
 			<div class="hacker-wrapper image-link">
 				<div> <!--flex-child before every a tag -->
 					<a href="#" data-name ="boy">
-						<img src="images/dog_thumb_boy.jpg" alt="Resting tri-colored greyhound on a red chair.">
+						<div>
+							<img src="images/dog_thumb_boy.jpg" alt="Resting tri-colored greyhound on a red chair.">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Boy</h4>
 					<p>4 years old</p>
@@ -31,7 +35,12 @@
 				</div>
 				<div> <!--flex-child-->
 					<a href="#" data-name="rufus">
-						<img src="images/cat_thumb_rufus.jpg" alt="One eyed tabby cat on white sheet">
+						<div>
+							<img src="images/cat_thumb_rufus.jpg" alt="One eyed tabby cat on white sheet">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Rufus</h4>
 					<p>5 years old</p>
@@ -39,7 +48,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="leo">
-						<img src="images/dog_thumb_leo.jpg" alt="Close-up of shaggy golden doodle's face">
+						<div>
+							<img src="images/dog_thumb_leo.jpg" alt="Close-up of shaggy golden doodle's face">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Leo</h4>
 					<p>4 years old</p>
@@ -47,7 +61,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="mrmoo">
-						<img src="images/cat_thumb_mrmoo.jpg" alt="White and black tuxedo cat staring confused into the camera">
+						<div>
+							<img src="images/cat_thumb_mrmoo.jpg" alt="White and black tuxedo cat staring confused into the camera">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Mr. Moo</h4>
 					<p>5 years old</p>
@@ -55,7 +74,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="prudence">
-						<img src="images/dog_thumb_prudence.jpg" alt="White cockapoo with a mohawk sitting on a red chair">
+						<div>
+							<img src="images/dog_thumb_prudence.jpg" alt="White cockapoo with a mohawk sitting on a red chair">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Prudence</h4>
 					<p>5 years old</p>
@@ -63,7 +87,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="earlKendrickWaffles">
-						<img src="images/cat_thumb_earlKendrickWaffles.jpg" alt="Black cat with a white tuft of chest hair sitting sassily on a brown sofa">
+						<div>
+							<img src="images/cat_thumb_earlKendrickWaffles.jpg" alt="Black cat with a white tuft of chest hair sitting sassily on a brown sofa">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Earl Kendrick Waffles</h4>
 					<p>6 months old</p>
@@ -71,15 +100,38 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="bebe">
-						<img src="images/dog_thumb_bebe.jpg" alt="Brown chihuahua looking up untrustingly into the camera">
+						<div>
+							<img src="images/dog_thumb_bebe.jpg" alt="Brown chihuahua looking up untrustingly into the camera">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Bebe</h4>
 					<p>3 years old</p>
 					<p>Chihuahua</p>
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
+					<a href="#" data-name="sinclair">
+						<div>
+							<img src="images/cat_thumb_sinclair.jpg" alt="a tri-color cat sitting against a white wall">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
+					</a>
+					<h4>Sinclair</h4>
+					<p>3 years old</p>
+					<p>Tabby</p>
+				</div> <!--flex-child-->
+				<div> <!--flex-child-->
 					<a href="#" data-name="dublin">
-						<img src="images/dog_thumb_dublin.jpg" alt="Happy white dog with curly hair laying down outdoors">
+						<div>
+							<img src="images/dog_thumb_dublin.jpg" alt="Happy white dog with curly hair laying down outdoors">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Dublin</h4>
 					<p>8 years old</p>
@@ -87,7 +139,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="paco">
-						<img src="images/dog_thumb_paco.jpg" alt="Silly husky and lab mix puppy with tongue sticking out and one paw in mid air">
+						<div>
+							<img src="images/dog_thumb_paco.jpg" alt="Silly husky and lab mix puppy with tongue sticking out and one paw in mid air">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Paco</h4>
 					<p>6 years old</p>
@@ -95,7 +152,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="lucha">
-						<img src="images/dog_thumb_lucha.jpg" alt="Small gray and peppered chihuahua on large red lazyboy">
+						<div>
+							<img src="images/dog_thumb_lucha.jpg" alt="Small gray and peppered chihuahua on large red lazyboy">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Lucha</h4>
 					<p>5 years old</p>
@@ -103,7 +165,12 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="clyde">
-						<img src="images/dog_thumb_clyde.jpg" alt="a proud border collie sits on a red chair with a puffed out chest">
+						<div>
+							<img src="images/dog_thumb_clyde.jpg" alt="a proud border collie sits on a red chair with a puffed out chest">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Clyde</h4>
 					<p>5 years old</p>
@@ -111,46 +178,17 @@
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
 					<a href="#" data-name="cooper">
-						<img src="images/dog_thumb_cooper.jpg" alt="a lazy white golden doodle sleeps on a cream colored sofa chair">
+						<div>
+							<img src="images/dog_thumb_cooper.jpg" alt="a lazy white golden doodle sleeps on a cream colored sofa chair">
+							<div class="overlay-hover">
+								<i class="fa fa-paw"></i>
+							</div>
+						</div>
 					</a>
 					<h4>Cooper</h4>
 					<p>3 years old</p>
 					<p>Golden Doodle</p>
 				</div> <!--flex-child-->
-				<div> <!--flex-child-->
-					<a href="#" data-name="">
-						<img src="images/cat_thumb_rufus.jpg" alt="one eyed tabby cat on white sheet">
-					</a>
-					<h4>Rufus</h4>
-					<p>5 years old</p>
-					<p>Tabby</p>
-				</div> <!--flex-child-->
-				<div> <!--flex-child-->
-					<a href="#" data-name="rufus">
-						<img src="images/cat_thumb_rufus.jpg" alt="one eyed tabby cat on white sheet">
-					</a>
-					<h4>Rufus</h4>
-					<p>5 years old</p>
-					<p>Tabby</p>
-				</div> <!--flex-child-->
-				<div> <!--flex-child-->
-					<a href="#" data-name="rufus">
-						<img src="images/cat_thumb_rufus.jpg" alt="one eyed tabby cat on white sheet">
-					</a>
-					<h4>Rufus</h4>
-					<p>5 years old</p>
-					<p>Tabby</p>
-				</div> <!--flex-child-->
-				<div> <!--flex-child-->
-					<a href="#" data-name="rufus">
-						<img src="images/cat_thumb_rufus.jpg" alt="one eyed tabby cat on white sheet">
-					</a>
-					<h4>Rufus</h4>
-					<p>5 years old</p>
-					<p>Tabby</p>
-				</div> <!--flex-child-->
-				
-				
 			</div><!-- End of .hacker-wrapper -->
 		</section><!-- End of .gallery -->
 	</div><!-- End of .site-container -->
@@ -174,7 +212,10 @@
 						<li><span class="bold">Area of Expertise: </span><span class="expertise"></span></li>
 					</ul>
 				</div><!-- End of .modal-content-container-->
-				<img src="" alt="" class="owner">
+				<div class="owner-img-container">
+					<img src="" alt="" class="owner">
+					<h5>Click Me!</h5>
+				</div>
 			</div><!--End of flexed child-->
 		</div> <!--End of .modal -->
 	</div> <!-- End of .overlay -->

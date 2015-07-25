@@ -1019,10 +1019,44 @@ header img {
   margin-top: 20%;
   width: 220px;
   height: 220px;
+  position: relative;
 }
 
 .gallery div {
   padding: 0 1% 2%;
+}
+
+.gallery .overlay-hover {
+  margin-top: 20%;
+  background: rgba(0, 0, 0, 0.6);
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  padding: 0 1% 2;
+  top: 0;
+  left: 2px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .fa-paw {
+  margin: 0;
+  color: #EFEFED;
+  font-size: 4rem;
+}
+
+.gallery .overlay-hover:hover {
+  opacity: 1;
 }
 
 .modal-container {
@@ -1088,6 +1122,10 @@ header img {
   border-radius: 50%;
 }
 
+.modal-container .owner:hover {
+  cursor: pointer;
+}
+
 .modal-container .multiple-owners {
   width: 200px;
   height: 100px;
@@ -1096,6 +1134,24 @@ header img {
 
 .modal-container ul {
   margin-top: 5%;
+}
+
+.modal-container .owner-img-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-container .owner-img-container:hover h5 {
+  color: #d12026;
+}
+
+.modal-container h5 {
+  margin-top: 10%;
 }
 
 .show {
