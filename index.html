@@ -38,7 +38,7 @@
 					<p>Tabby</p>
 				</div> <!--flex-child-->
 				<div> <!--flex-child-->
-					<a href="#" data-name="rufus">
+					<a href="#" data-name="leo">
 						<img src="images/dog_thumb_leo.jpg" alt="Close-up of shaggy golden doodle's face">
 					</a>
 					<h4>Leo</h4>
@@ -157,18 +157,32 @@
 	<div class="modal-container">
 		<div class="overlay">
 			<div class="modal">
-				<h2 class="name"></h2>
-				<ul>
-					<li class="nickname">Nickname: </li>
-					<li class="age">Age: </li>
-					<li class="sex">Sex: </li>
-					<li class="birthday">Birthday: </li>
-					<li class="size">Size: </li>
-					<li class="likes">Likes: </li>
-					<li class="dislikes">Dislikes: </li>
-					<li class="favourite">Favourite treat: </li>
-					<li class="expertise">Area of Expertise: </li>
-				</ul>
+				<div class="popUpImgContainer">
+					<img src="" alt="" class="popUp">
+				</div>
+				<div class="modal-content-container"><!--flexed child-->
+					<h2 class="name"></h2>
+					<ul>
+						<li>Nickname: <span class="nickname"></span></li>
+						<li>Age: <span class="age"></span></li>
+						<li>Sex: <span class="sex"></span></li>
+						<li>Birthday: <span class="birthday"></span></li>
+						<li>Size: <span class="size"></span></li>
+						<li>Likes: <span class="likes"></span></li>
+						<li>Dislikes: <span class="dislikes"></span></li>
+						<li>Favourite treat: <span class="favourite"></span></li>
+						<li>Area of Expertise: <span class="expertise"></span></li>
+					</ul>
+					<div class="hacker">
+						<img src="images/dog_leo_owner.jpg" alt="">
+						<img src="images/dog_thumb_boy.jpg" alt="">
+						<img src="images/dog_thumb_boy.jpg" alt="">
+						<img src="images/dog_thumb_boy.jpg" alt="">
+					</div>
+					<div class="owner">
+						<img src="#" alt="">
+					</div>
+				</div><!--End of flexed child-->
 			</div> <!--End of .modal -->
 		</div> <!-- End of .overlay -->
 	</div><!-- End of .modal-container-->
