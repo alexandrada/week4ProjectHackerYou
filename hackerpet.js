@@ -16,6 +16,21 @@ $(document).ready(function(){
       together: 'images/dog_bebe_nadia_together.jpg'
     },
     
+    boostergold:{
+      name: 'Booster Gold',
+      nickname: 'Boo',
+      age: '3 years old',
+      sex: 'Female',
+      birthday: 'Unknown',
+      likes: 'Chasing own tail, fruits, snuggles',
+      dislikes: 'Carrots, my mom, posing for pictures',
+      favourite: 'Dried mango',
+      expertise: 'Design',
+      popUp:'images/cat_boostergold.jpg',
+      owner: 'images/cat_boostergold_anya.jpg',
+      together: 'images/cat_boostergold_anya_together.jpg'
+    },
+    
     boy:{
       name: 'Boy',
       nickname: 'Boy-Boy',
