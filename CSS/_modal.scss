@@ -11,7 +11,7 @@
   z-index: 2;
   
   .popUpImgContainer{
-    height: 400px;
+    
     width:60%;
     overflow: hidden;
     max-width: 400px;
@@ -32,15 +32,14 @@
   
   .modal{
     width: 80%;
-    // height: 80%;
     border: 1px solid black;
     opacity: 1;
     background: white;
     @include flex;
     padding: 2%;
     flex-direction: row;
-    
   }
+  
   
   .modal-content-container{
     width:45%;
@@ -74,6 +73,20 @@
   
   h5{
     margin-top: 10%;
+  }
+  @media (max-width: 800px){
+    .modal{
+      flex-wrap:wrap;
+    }
+    .popUpImgContainer{
+      order:-2;
+    }
+    .owner-img-container{
+      order: -1;
+      margin-left:10%;
+    }
+    
+    
   }
   
 }
