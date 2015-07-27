@@ -16,16 +16,30 @@ $(document).ready(function(){
       together: 'images/dog_bebe_nadia_together.jpg'
     },
     
+    bluebeetle:{
+      name: 'Blue Beetle',
+      nickname: 'Beetle',
+      age: '7 years old',
+      sex: 'Female',
+      birthday: 'May something',
+      likes: 'Looking out the window, curling up under blankets, whining',
+      dislikes: 'Waiting for her food, dogs who snorf at her, closed doors',
+      favourite: 'Tuna',
+      expertise: 'Design',
+      popUp:'images/cat_bluebeetle.jpg',
+      owner: 'images/cat_bluebeetle_anya.jpg',
+      together: 'images/cat_bluebeetle_anya_together.jpg'
+    },
     boostergold:{
       name: 'Booster Gold',
-      nickname: 'Boo',
-      age: '3 years old',
+      nickname: 'Booster',
+      age: '8.5 years old',
       sex: 'Female',
-      birthday: 'Unknown',
-      likes: 'Chasing own tail, fruits, snuggles',
-      dislikes: 'Carrots, my mom, posing for pictures',
-      favourite: 'Dried mango',
-      expertise: 'Design',
+      birthday: 'April something',
+      likes: 'Being held like a baby, licking plastic, raw meat',
+      dislikes: ' Not being held, leaving the apartment, being alone',
+      favourite: 'Raw chicken',
+      expertise: 'JavaScript',
       popUp:'images/cat_boostergold.jpg',
       owner: 'images/cat_boostergold_anya.jpg',
       together: 'images/cat_boostergold_anya_together.jpg'
@@ -33,14 +47,14 @@ $(document).ready(function(){
     
     boy:{
       name: 'Boy',
-      nickname: 'Boy-Boy',
-      age: '4 years old',
-      sex: 'Male',
-      birthday: 'Unknown',
-      likes: 'Couches, naps, clapping',
-      dislikes: 'Large classrooms, crowds, posing',
-      favourite: 'Sleeping',
-      expertise: 'Javascript',
+      nickname: 'Gooby',
+      age: '5 years old',
+      sex: 'Boy',
+      birthday: 'July 26th',
+      likes: 'Sleeping, running and his family',
+      dislikes: 'Fireworks and thunder',
+      favourite: 'Blueberries, yogurt and anything beef-y',
+      expertise: 'Design',
       popUp:'images/dog_boy.jpg',
       owner: 'images/dog_boy_marlo.jpg',
       together: 'images/dog_boy_marlo_together.jpg'
@@ -120,19 +134,35 @@ $(document).ready(function(){
     },
     
     leo:{
-      name: 'Leo',
-      nickname: 'A',
+      name: 'Leonidas',
+      nickname: 'Leo',
       age: '4 years old',
       sex: 'Male',
-      birthday: 'Unknown',
-      likes: 'Following, getting pets, breathing heavily',
-      dislikes: 'Solitude, havings his bangs touched, loud noises',
-      favourite: 'bananas',
-      expertise: 'jQuery',
+      birthday: 'February 28th',
+      likes: 'Sitting like a human, being very close to you at all times , having his face blown at',
+      dislikes: 'Being brushed, not sleeping on the bed, having his face blown at',
+      favourite: 'Chicken',
+      expertise: 'Web Accessibility',
       popUp:'images/dog_leo.jpg',
       owner: 'images/dog_leo_kristen.jpg',
       together: 'images/dog_leo_kristen_together.jpg'
     },
+    
+    lola:{
+      name: 'Lola',
+      nickname: 'Lulu, Diabola',
+      age: '5 years old',
+      sex: 'Female',
+      birthday: 'July 3rd',
+      likes: 'Suntanning, cuddling, tug-of-war, fetch',
+      dislikes: 'Big dogs, rain, and snow',
+      favourite: 'Cheese, beef liver, bully sticks',
+      expertise: 'Design Direction',
+      popUp:'images/dog_lola.jpg',
+      owner: 'images/dog_lola_sarah.jpg',
+      together: 'images/dog_lola_sarah_together.jpg'
+    },
+    
     lucha:{
       name:'Lucha',
       nickname: 'Lu, Lubear, Lubeezy, Luchie, Susan Luchie, Luchita Nyong’o',
@@ -232,55 +262,63 @@ $(document).ready(function(){
       popUp:'images/cat_sinclair.jpg',
       owner: 'images/cat_sinclair_yana.jpg',
       together: 'images/cat_sinclair_yana_together.jpg'
+    },
+    snickers: {
+      name: 'Snickers',
+      nickname: 'SNICKERS GET OFF THE TABLE',
+      age: '1.5 years old',
+      sex: 'Male',
+      birthday: 'January 9th',
+      likes: 'Naps, laps and vet apps',
+      dislikes: 'Getting wet, tomatoes, squirrels',
+      favourite: 'Sweet Potatoes. He once tried to eat a bat.',
+      expertise: 'Design',
+      popUp:'images/dog_snickers.jpg',
+      owner: 'images/dog_snickers_wes.jpg',
+      together: 'images/dog_snickers_wes_together.jpg'
     }
   };
   
   //on click get pet data-name, pass it to a function to fill data in the html's modal
-  $('.gallery a').on('click', function (){
+  $('.gallery a').on('click', function(e){
     var name = $(this).data('name');
     var pet = pets[name];
     
-    if($(this).is('a')){
-      // fill out the modal by appending the object attributes to the correct class in the modal using the data-name attribute
-      $('.name').empty().append(pet['name']);
-      $('.nickname').empty().append(pet['nickname']);
-      $('.age').empty().append(pet['age']);
-      $('.sex').empty().append(pet['sex']);
-      $('.birthday').empty().append(pet['birthday']);
-      $('.likes').empty().append(pet['likes']);
-      $('.dislikes').empty().append(pet['dislikes']);
-      $('.favourite').empty().append(pet['favourite']);
-      $('.expertise').empty().append(pet['expertise']);
-      $('.popUp').attr('src', pet['popUp']);
-      $('.owner').attr('src', pet['owner']);
-      
-      
-      //If a pet has more than one owner that attended HackerYou we will add a class of multiple-owners to the owner img in order for both portraits of the owners to fit
-      if(pet['name'] === 'Prudence'){
-        $('.owner').addClass('multiple-owners');
+    // fill out the modal by appending the object attributes to the correct class in the modal using the data-name attribute
+    $('.name').empty().append(pet['name']);
+    $('.nickname').empty().append(pet['nickname']);
+    $('.age').empty().append(pet['age']);
+    $('.sex').empty().append(pet['sex']);
+    $('.birthday').empty().append(pet['birthday']);
+    $('.likes').empty().append(pet['likes']);
+    $('.dislikes').empty().append(pet['dislikes']);
+    $('.favourite').empty().append(pet['favourite']);
+    $('.expertise').empty().append(pet['expertise']);
+    $('.popUp').attr('src', pet['popUp']);
+    $('.owner').attr('src', pet['owner']);
+    
+    // when clicking on owner's avi, popUp image of pet will change to together.jpg  (owner and pet together)
+    // when clicking on owner's avi again, if pet and together.jpg image then change back to pet image.
+    $('.owner').on('click', function(e){
+      if($('#popUpImg').hasClass('together')){
+        $('.popUp').attr('src', pet['popUp']);
+        $('#popUpImg').removeClass('together');
       }
-      //If there is only one owner we will remove the class of multiple-owners if it has been applied to the owner image if not it will do nothing
-      else{
-        $('.owner').removeClass('multiple-owners');
+      else {
+        $('#popUpImg').addClass('together');
+        $('.popUp').attr('src', pet['together']);
       }
+    });
+    
+    //If a pet has more than one owner that attended HackerYou we will add a class of multiple-owners to the owner img in order for both portraits of the owners to fit
+    if(pet['name'] === 'Prudence'){
+      $('.owner').addClass('multiple-owners');
     }
+    //If there is only one owner we will remove the class of multiple-owners if it has been applied to the owner image if not it will do nothing
     else{
-      console.log(pet);
-      // when clicking on owner's avi, popUp image of pet will change to together.jpg  (owner and pet together)
-      // when clicking on owner's avi again, if pet and together.jpg image then change back to pet image.
-      $('.owner').on('click', function(e){
-        if($(this).hasClass('together')){
-          $(this).removeClass('together');
-          $('.popUp').attr('src', pet['popUp']);
-        }
-        else {
-          $(this).addClass('together');
-          $('.popUp').attr('src', pet['together']);
-        }
-      });
-    }; // end of function that fills out popUp data attributes.
-  });
-  
+      $('.owner').removeClass('multiple-owners');
+    }
+  }); // end of function that fills out popUp data attributes.
   
   //listen for click event on a within the gallery.
   $('.gallery a').on('click', function(e){
@@ -288,13 +326,11 @@ $(document).ready(function(){
     //change the attributes for modal container to change visibility visible and display flex.
     $('.modal-container').addClass('show');
   });
-  
   //to get out of modal create an event on the overlay to remove "show" class.
   //listen for click event on overlay within the modal.
   //change the attribute for the modal container to remove "show" class.
-  $('.modal-container .overlay').on('click', function(e){
+  $('.modal-container .overlay').on('click', function(ev){
     $('.modal-container').removeClass('show');
-    $('.owner').removeClass('together');
   });
   //disable exiting from modal within modal-container class.
   $('.modal-container .modal').on('click', function(e){
