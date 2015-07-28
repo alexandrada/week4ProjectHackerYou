@@ -117,7 +117,20 @@ $(document).ready(function(){
       owner: 'images/cat_earlKendrickWaffles_adam.jpg',
       together: 'images/cat_earlKendrickWaffles_adam_together.jpg'
     },
-    
+    henry:{
+      name: 'Henry',
+      nickname: 'Meesa',
+      age: '3 years old',
+      sex: 'Male',
+      birthday: 'September 11th',
+      likes: 'Toys, chewing undies, car rides',
+      dislikes: 'Being in trouble, the heat, being groomed',
+      favourite: 'Male bull organ',
+      expertise: 'Sass',
+      popUp:'images/dog_henry.jpg',
+      owner: 'images/dog_henry_james.jpg',
+      together: 'images/dog_henry_james_together.jpg'
+    },
     izzy:{
       name:'Izzy Cooper',
       nickname: 'Littles',

@@ -23,6 +23,8 @@
     @include flex;
     @include justify-flex-center;
     @include align-flex-center;
+    @include wrap-flex;
+    @include row-direction-flex;
     height:100%;
     width: 100%;
     margin: 0;
@@ -34,9 +36,10 @@
     border: 1px solid black;
     opacity: 1;
     background: white;
-    @include flex;
     padding: 2%;
+    @include flex;
     @include row-direction-flex;
+    @include wrap-flex;
   }
   
   
@@ -64,6 +67,7 @@
     @include flex;
     @include align-flex-center;
     @include col-direction-flex;
+    @include wrap-flex;
   }
   
   .owner-img-container:hover h5{

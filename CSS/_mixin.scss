@@ -7,41 +7,41 @@
 }
 
 @mixin justify-flex-center{
-  justify-content: -webkit-center;
-  justify-content: -moz-center;
-  justify-content: -ms-center;
-  justify-content: -o-center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
   justify-content: center;
 }
 
 @mixin wrap-flex{
-  flex-wrap: -webkit-wrap;
-  flex-wrap: -moz-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap: -o-wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap
 }
 
 @mixin align-flex-center{
-  align-items: -webkit-center;
-  align-items: -moz-center;
-  align-items: -ms-center;
-  align-items: -o-center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
   align-items: center;
 }
 
 @mixin col-direction-flex{
-  flex-direction: -webkit-column;
-  flex-direction: -moz-column;
-  flex-direction: -ms-column;
-  flex-direction: -o-column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
   flex-direction: column;
 }
 
 @mixin row-direction-flex{
-  flex-direction: -webkit-row;
-  flex-direction: -moz-row;
-  flex-direction: -ms-row;
-  flex-direction: -o-row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
   flex-direction: row;
 }

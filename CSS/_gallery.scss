@@ -3,6 +3,7 @@
     @include flex;
     @include justify-flex-center;
     @include wrap-flex;
+    @include row-direction-flex;
   }
   img{
     margin-top: 20%;
@@ -31,6 +32,8 @@
     @include flex;
     @include justify-flex-center;
     @include align-flex-center;
+    @include row-direction-flex;
+    @include wrap-flex;
   }
   
   .fa-paw{

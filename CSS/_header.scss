@@ -11,6 +11,7 @@ header{
     margin-left:3%;
     @include flex;
     @include row-direction-flex;
+    @include wrap-flex;
     
   }
   img {
