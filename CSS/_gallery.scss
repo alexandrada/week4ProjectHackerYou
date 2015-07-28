@@ -1,8 +1,8 @@
 .gallery{
   .hacker-wrapper{
     @include flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include justify-flex-center;
+    @include wrap-flex;
   }
   img{
     margin-top: 20%;
@@ -29,8 +29,8 @@
     -moz-transition: opacity .5s ease;
     transition: opacity .5s ease;
     @include flex;
-    justify-content: center;
-    align-items: center;
+    @include justify-flex-center;
+    @include align-flex-center;
   }
   
   .fa-paw{

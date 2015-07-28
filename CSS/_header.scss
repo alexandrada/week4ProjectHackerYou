@@ -10,7 +10,7 @@ header{
   .flex{
     margin-left:3%;
     @include flex;
-    flex-direction:row;
+    @include row-direction-flex;
     
   }
   img {

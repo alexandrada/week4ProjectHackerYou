@@ -536,6 +536,10 @@ header .flex {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-direction: -webkit-row;
+  flex-direction: -moz-row;
+  flex-direction: -ms-row;
+  flex-direction: -o-row;
   flex-direction: row;
 }
 
@@ -568,8 +572,16 @@ header img {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: -webkit-center;
+  justify-content: -moz-center;
+  justify-content: -ms-center;
+  justify-content: -o-center;
   justify-content: center;
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -moz-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap: -o-wrap;
+  flex-wrap: wrap;
 }
 
 .gallery img {
@@ -602,7 +614,15 @@ header img {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  justify-content: -webkit-center;
+  justify-content: -moz-center;
+  justify-content: -ms-center;
+  justify-content: -o-center;
   justify-content: center;
+  align-items: -webkit-center;
+  align-items: -moz-center;
+  align-items: -ms-center;
+  align-items: -o-center;
   align-items: center;
 }
 
@@ -646,7 +666,15 @@ header img {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  justify-content: -webkit-center;
+  justify-content: -moz-center;
+  justify-content: -ms-center;
+  justify-content: -o-center;
   justify-content: center;
+  align-items: -webkit-center;
+  align-items: -moz-center;
+  align-items: -ms-center;
+  align-items: -o-center;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -665,6 +693,10 @@ header img {
   display: -o-flex;
   display: flex;
   padding: 2%;
+  flex-direction: -webkit-row;
+  flex-direction: -moz-row;
+  flex-direction: -ms-row;
+  flex-direction: -o-row;
   flex-direction: row;
 }
 
@@ -698,7 +730,15 @@ header img {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  align-items: -webkit-center;
+  align-items: -moz-center;
+  align-items: -ms-center;
+  align-items: -o-center;
   align-items: center;
+  flex-direction: -webkit-column;
+  flex-direction: -moz-column;
+  flex-direction: -ms-column;
+  flex-direction: -o-column;
   flex-direction: column;
 }
 
@@ -712,6 +752,10 @@ header img {
 
 @media (max-width: 800px) {
   .modal-container .modal {
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -moz-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: -o-wrap;
     flex-wrap: wrap;
   }
   .modal-container .popUpImgContainer {

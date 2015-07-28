@@ -21,8 +21,8 @@
   }
   .overlay {
     @include flex;
-    justify-content: center;
-    align-items: center;
+    @include justify-flex-center;
+    @include align-flex-center;
     height:100%;
     width: 100%;
     margin: 0;
@@ -36,7 +36,7 @@
     background: white;
     @include flex;
     padding: 2%;
-    flex-direction: row;
+    @include row-direction-flex;
   }
   
   
@@ -62,8 +62,8 @@
   }
   .owner-img-container{
     @include flex;
-    align-items: center;
-    flex-direction: column;
+    @include align-flex-center;
+    @include col-direction-flex;
   }
   
   .owner-img-container:hover h5{
@@ -75,7 +75,7 @@
   }
   @media (max-width: 800px){
     .modal{
-      flex-wrap:wrap;
+      @include wrap-flex;
     }
     .popUpImgContainer{
       order:-2;
