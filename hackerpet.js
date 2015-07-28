@@ -86,7 +86,7 @@ $(document).ready(function(){
       expertise: 'CSS',
       popUp:'images/dog_cooper.jpg',
       owner: 'images/dog_cooper_evan.jpg',
-      together: 'images/dog_cooper_evan_together.jpg'
+      together: 'images/dog_placeholder.jpg'
     },
     
     dublin:{
@@ -115,7 +115,7 @@ $(document).ready(function(){
       expertise: 'Javascript',
       popUp:'images/cat_earlKendrickWaffles.jpg',
       owner: 'images/cat_earlKendrickWaffles_adam.jpg',
-      together: 'images/cat_earlKendrickWaffles_adam_together.jpg'
+      together: 'images/dog_placeholder.jpg'
     },
     henry:{
       name: 'Henry',
@@ -220,7 +220,8 @@ $(document).ready(function(){
       owner: 'images/cat_mrmoo_karly.jpg',
       together: 'images/cat_mrmoo_karly_together.jpg'
     },
-    nico{
+    
+    nico:{
       name: 'Nico',
       nickname: 'Jeebs, Papua, Cholo',
       age: '8 years old',
@@ -232,7 +233,7 @@ $(document).ready(function(){
       expertise: 'Stylus',
       popUp: 'images/dog_nico.jpg',
       owner: 'images/dog_nico_lucas.jpg',
-      together: 'images/dog_nico_lucas_together.jpg'
+      together: 'images/dog_placeholder.jpg'
     },
     paco:{
       name: 'Paco',
@@ -246,7 +247,7 @@ $(document).ready(function(){
       expertise: 'User Experience',
       popUp: 'images/dog_paco.jpg',
       owner: 'images/dog_paco_francis.jpg',
-      together: 'images/dog_paco_francis_together.jpg'
+      together: 'images/dog_placeholder.jpg'
     },
     prudence:{
       name: 'Prudence',
