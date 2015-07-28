@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+  var app = {};
   var pets = {
     bebe:{
       name: 'Bebe',
@@ -295,43 +295,47 @@ $(document).ready(function(){
   //on click get pet data-name, pass it to a function to fill data in the html's modal
   $('.gallery a').on('click', function(e){
     var name = $(this).data('name');
-    var pet = pets[name];
+    app.pet = pets[name];
     
     // fill out the modal by appending the object attributes to the correct class in the modal using the data-name attribute
-    $('.name').empty().append(pet['name']);
-    $('.nickname').empty().append(pet['nickname']);
-    $('.age').empty().append(pet['age']);
-    $('.sex').empty().append(pet['sex']);
-    $('.birthday').empty().append(pet['birthday']);
-    $('.likes').empty().append(pet['likes']);
-    $('.dislikes').empty().append(pet['dislikes']);
-    $('.favourite').empty().append(pet['favourite']);
-    $('.expertise').empty().append(pet['expertise']);
-    $('.popUp').attr('src', pet['popUp']);
-    $('.owner').attr('src', pet['owner']);
+    $('.name').empty().append(app.pet['name']);
+    $('.nickname').empty().append(app.pet['nickname']);
+    $('.age').empty().append(app.pet['age']);
+    $('.sex').empty().append(app.pet['sex']);
+    $('.birthday').empty().append(app.pet['birthday']);
+    $('.likes').empty().append(app.pet['likes']);
+    $('.dislikes').empty().append(app.pet['dislikes']);
+    $('.favourite').empty().append(app.pet['favourite']);
+    $('.expertise').empty().append(app.pet['expertise']);
+    $('.popUp').empty().attr('src', app.pet['popUp']);
+    $('.owner').empty().attr('src', app.pet['owner']);
     
     // when clicking on owner's avi, popUp image of pet will change to together.jpg  (owner and pet together)
     // when clicking on owner's avi again, if pet and together.jpg image then change back to pet image.
-    $('.owner').on('click', function(e){
-      if($('#popUpImg').hasClass('together')){
-        $('.popUp').attr('src', pet['popUp']);
-        $('#popUpImg').removeClass('together');
-      }
-      else {
-        $('#popUpImg').addClass('together');
-        $('.popUp').attr('src', pet['together']);
-      }
-    });
+    
     
     //If a pet has more than one owner that attended HackerYou we will add a class of multiple-owners to the owner img in order for both portraits of the owners to fit
-    if(pet['name'] === 'Prudence'){
+    if(app.pet['name'] === 'Prudence'){
       $('.owner').addClass('multiple-owners');
     }
     //If there is only one owner we will remove the class of multiple-owners if it has been applied to the owner image if not it will do nothing
     else{
       $('.owner').removeClass('multiple-owners');
     }
+    
   }); // end of function that fills out popUp data attributes.
+  
+  $('.owner').on('click', function(e){
+    if($('#popUpImg').hasClass('together')){
+      $('.popUp').attr('src', app.pet['popUp']);
+      $('#popUpImg').removeClass('together');
+    }
+    else {
+      $('#popUpImg').addClass('together');
+      $('.popUp').attr('src', app.pet['together']);
+    }
+  });
+  
   
   //listen for click event on a within the gallery.
   $('.gallery a').on('click', function(e){
@@ -347,6 +351,7 @@ $(document).ready(function(){
   });
   //disable exiting from modal within modal-container class.
   $('.modal-container .modal').on('click', function(e){
+    
     e.stopPropagation();
   });
 }); // end of modal function!
