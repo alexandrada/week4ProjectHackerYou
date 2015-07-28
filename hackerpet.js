@@ -220,10 +220,25 @@ $(document).ready(function(){
       owner: 'images/cat_mrmoo_karly.jpg',
       together: 'images/cat_mrmoo_karly_together.jpg'
     },
+    nico{
+      name: 'Nico',
+      nickname: 'Jeebs, Papua, Cholo',
+      age: '8 years old',
+      sex: 'Female',
+      birthday: 'November 11th',
+      likes: 'Her orange ball, swimming, chewing bones through her blanket',
+      dislikes: 'Farts, wind, dog packs',
+      favourite: 'Carrots',
+      expertise: 'Stylus',
+      popUp: 'images/dog_nico.jpg',
+      owner: 'images/dog_nico_lucas.jpg',
+      together: 'images/dog_nico_lucas_together.jpg'
+    },
     paco:{
       name: 'Paco',
       nickname: 'N/A',
       age: '6 years old',
+      sex: 'Male',
       birthday: 'May 15th',
       likes: 'Strangers, playing in water, being outside',
       dislikes: 'Learning, thunder storms, being on a leash',
