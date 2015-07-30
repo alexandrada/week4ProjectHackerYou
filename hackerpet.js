@@ -263,6 +263,22 @@ $(document).ready(function(){
       owner: 'images/dog_prudence_jendrew.jpg',
       together: 'images/dog_prudence_jendrew_together.jpg'
     },
+    
+    rafiki:{
+      name: 'Rafiki',
+      nickname: 'Feeks, The Feeks, Fiki, Pups',
+      age: '2 years old',
+      sex: 'Female',
+      birthday: 'May 3rd',
+      likes: 'Snacks, chews her rope, people watching, blankets, walks along the harbour, smelling flowers, falling asleep to "Night Changes" by One Direction',
+      dislikes: 'Thunderstorms, surround sound speakers, meeting larger dogs, anything or anyone that steps foot on our driveway',
+      favourite: 'Carrots',
+      expertise: 'Sniffing out code smell',
+      popUp: 'images/dog_rafiki.jpg',
+      owner: 'images/dog_rafiki_francine.jpg',
+      together: 'images/dog_rafiki_francine_together.jpg'
+    },
+    
     rufus: {
       name: 'Rufus',
       nickname: 'Ru',
