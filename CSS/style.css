@@ -863,6 +863,10 @@ body {
 a {
   position: relative;
 }
+footer a {
+  color: $red;
+  text-decoration: none;
+}
 
 .site-container {
   max-width: 1110px;

@@ -145,7 +145,20 @@ $(document).ready(function(){
       owner: 'images/cat_moose_nat.jpg',
       together: 'images/cat_izzy_nat_together.jpg'
     },
-    
+    johnny:{
+      name: 'Johnny',
+      nickname: 'Fuzzbutt',
+      age: '4 years old',
+      sex: 'Male',
+      birthday: '2 years old',
+      likes: 'Smushing his giant head into people, staring at shadows, belly rub',
+      dislikes: 'The blowdrier, the vacuum cleaner, being alone ',
+      favourite: 'Physical affection ',
+      expertise: 'Top of the fridge exploration',
+      popUp:'images/cat_johnny.jpg',
+      owner: 'images/cat_johnny_laura.jpg',
+      together: 'images/cat_johnny_laura_together.jpg'
+    },
     leo:{
       name: 'Leonidas',
       nickname: 'Leo',
@@ -250,15 +263,15 @@ $(document).ready(function(){
       together: 'images/dog_placeholder.jpg'
     },
     prudence:{
-      name: 'Prudence',
-      nickname: 'Pru',
-      age: '6 years old',
+      name: 'Prudence Thunder',
+      nickname: 'Poo, Pru, Butthead',
+      age: '9 years old',
       sex: 'Female',
       birthday: 'Unknown',
-      likes: 'Hopping, going home, water on dry food',
-      dislikes: 'Loud noises, baths, not jumping',
-      favourite: 'Sleeping on the desk',
-      expertise: 'Teaching HTML',
+      likes: 'The inside rubber part of tennis balls, raspberry bellies, Whitesnake',
+      dislikes: 'Dislikes: squirrels, Baha Men, waking up',
+      favourite: 'Going home.',
+      expertise: 'UX',
       popUp: 'images/dog_prudence.jpg',
       owner: 'images/dog_prudence_jendrew.jpg',
       together: 'images/dog_prudence_jendrew_together.jpg'
@@ -321,9 +334,24 @@ $(document).ready(function(){
       popUp:'images/dog_snickers.jpg',
       owner: 'images/dog_snickers_wes.jpg',
       together: 'images/dog_snickers_wes_together.jpg'
+    },
+    winston: {
+      name: 'Winston',
+      nickname: 'Winnie, Fatman',
+      age: '3 years old',
+      sex: 'Male',
+      birthday: 'April 7th',
+      likes: 'Naps, tug-of-war, the sun',
+      dislikes: 'Paper bags, boxes, brooms',
+      favourite: 'Ice-cream, milk, pizza',
+      expertise: 'CSS2',
+      popUp:'images/dog_winston.jpg',
+      owner: 'images/dog_winston_colin.jpg',
+      together: 'images/dog_winston_colin_together.jpg'
     }
   };
   
+
   //on click get pet data-name, pass it to a function to fill data in the html's modal
   $('.gallery a').on('click', function(e){
     var name = $(this).data('name');
