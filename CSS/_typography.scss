@@ -19,6 +19,7 @@ h1 {
 	color: $red;
 	font-size: 4.66rem;
 	padding: 5% 0 1%;
+	margin-bottom: 3%;
 }
 h2 {
 	font-size: 3rem;
@@ -35,12 +36,13 @@ h2, h3, h4, p {
 h4 {
 	font-size:1.2rem;
 	font-weight:600;
+	line-height: 1.4rem;
 }
 
 
 p, li {
 	font-size: 1rem;
-	line-height: 1.2rem;
+	line-height: 1.rem;
 }
 .bold {
 	font-weight:600;

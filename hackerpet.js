@@ -263,8 +263,8 @@ $(document).ready(function(){
       together: 'images/dog_placeholder.jpg'
     },
     prudence:{
-      name: 'Prudence Thunder',
-      nickname: 'Poo, Pru, Butthead',
+      name: 'Prudence',
+      nickname: 'Prudence Thunder, Poo, Pru, Butthead',
       age: '9 years old',
       sex: 'Female',
       birthday: 'Unknown',
